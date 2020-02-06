@@ -1,0 +1,322 @@
+/*============= 2. Helper  ==================*/
+/********** Heading *********/
+
+.page-heading
+  margin-bottom: 50px
+  margin-top: 50px
+  border-bottom: 1px dashed rgba(255, 255, 255, 0.2)
+  padding-bottom: 10px
+
+  .icon
+    float: right
+    font-size: 38px
+    line-height: 1em
+    color: #fff
+
+  h2
+    font-size: 36px
+    font-weight: 700
+    letter-spacing: 1.5px
+    line-height: 1em
+    text-transform: capitalize
+    color: #fff
+    position: relative
+    display: inline-block
+
+.subheading
+  position: relative
+  margin-bottom: 50px
+  text-align: center
+
+  h3
+    display: inline-block
+    font-size: 22px
+    font-weight: 600
+    line-height: 1em
+    letter-spacing: .5px
+    position: relative
+    text-transform: uppercase
+    padding: 5px 10px
+    border-bottom: 2px solid rgba(255, 255, 255, 0.6)
+
+    &:before, &:after
+      position: absolute
+      content: ""
+      width: 2px
+      height: 5px
+      background-color: rgba(255, 255, 255, 0.6)
+      bottom: 0
+
+    &:before
+      left: 0
+
+    &:after
+      right: 0
+
+
+
+
+
+
+
+
+/********** Progress Bar *********/
+
+.progress-title
+  font-size: 16px
+  font-weight: 500
+  margin: 0 0 10px
+  text-transform: uppercase
+
+.progress
+  height: 10px
+  background-color: #404144
+  -webkit-border-radius: 0
+  border-radius: 0
+  -webkit-box-shadow: none
+  box-shadow: none
+  margin-bottom: 20px
+  overflow: visible
+
+  .progress-bar
+    -webkit-box-shadow: none
+    box-shadow: none
+    position: relative
+    background-color: white
+    width: 0
+    -webkit-transition: all 2s ease-out
+    -o-transition: all 2s ease-out
+    transition: all 2s ease-out
+
+    &:after
+      content: ""
+      display: block
+      border: 15px solid transparent
+      border-bottom: 21px solid transparent
+      position: absolute
+      top: -26px
+      right: -12px
+      border-bottom-color: #fff
+
+  .progress-value
+    font-size: 15px
+    font-weight: bold
+    color: #fff
+    position: absolute
+    top: -30px
+    right: 0
+
+
+
+
+
+
+
+
+
+
+/********** Form *********/
+
+.input
+  display: block
+  position: relative
+
+.input__field
+  width: 100%
+  border: 2px solid #999
+  padding: 5px 10px
+  -webkit-transition: all .5s ease
+  -o-transition: all .5s ease
+  transition: all .5s ease
+  position: relative
+  z-index: 1
+  background-color: transparent
+  color: #fff
+
+  &.cf-error
+    border-color: #ff0000
+
+  &:focus
+    outline: none
+    border-color: #fff
+
+.input__label
+  font-weight: 500
+  position: absolute
+  top: 7px
+  left: 12px
+  -webkit-transition: all .2s ease
+  -o-transition: all .2s ease
+  transition: all .2s ease
+  z-index: 0
+
+.input__field:focus + .input__label
+  font-size: 14px
+  top: -25px
+  left: 0
+
+.input--filled
+  .input__label
+    font-size: 14px
+    top: -25px
+    left: 0
+
+  .input__field
+    border-color: #fff
+
+textarea
+  resize: none
+  height: auto
+
+
+
+
+
+
+
+
+
+/********** Button *********/
+
+.btn-main
+  border: 2px solid #fff
+  padding: 10px 20px
+  text-transform: uppercase
+  background-color: transparent
+  -webkit-transition: all .3s ease
+  -o-transition: all .3s ease
+  transition: all .3s ease
+  cursor: pointer
+  font-size: 14px
+  color: #fff
+  font-weight: 500
+  position: relative
+  line-height: 100%
+  letter-spacing: 1px
+  overflow: hidden
+
+  &:hover, &:focus
+    color: #000
+
+  &:hover:after, &:focus:after
+    opacity: 1
+    left: 0
+    width: 100%
+
+  &:after
+    position: absolute
+    content: ""
+    width: 30%
+    height: 100%
+    top: 0
+    left: 35%
+    background-color: #fff
+    opacity: 0
+    -webkit-transition: all .3s ease
+    -o-transition: all .3s ease
+    transition: all .3s ease
+    z-index: -1
+
+blockquote
+  font-size: 18px
+  color: #fff
+  border-left: 4px solid #fff
+  font-style: italic
+  padding-left: 20px
+  margin: 40px 0
+  font-weight: 500
+
+
+
+
+
+
+
+
+/********** Preloader *********/
+
+.preloader
+  position: fixed
+  top: 0
+  left: 0
+  height: 100vh
+  width: 100vw
+  background-color: #2C2D2F
+  z-index: 10000
+
+  .loader
+    position: absolute
+    top: 50%
+    width: 100%
+    -webkit-transform: translateY(-50%)
+    -ms-transform: translateY(-50%)
+    transform: translateY(-50%)
+    text-align: center
+
+    h4
+      text-transform: uppercase
+      margin-bottom: 10px
+      font-weight: 700
+      color: heading-color
+
+/*
+ * Dots Colors
+ */
+
+.loader span
+  width: .6em
+  height: .6em
+  margin: .19em
+  background: #007DB6
+  -webkit-border-radius: .6em
+  border-radius: .6em
+  -webkit-animation: loading 1s infinite alternate
+  animation: loading 1s infinite alternate
+
+  &:nth-of-type(2)
+    background: #008FB2
+    -webkit-animation-delay: 0.2s
+    animation-delay: 0.2s
+
+  &:nth-of-type(3)
+    background: #009B9E
+    -webkit-animation-delay: 0.4s
+    animation-delay: 0.4s
+
+  &:nth-of-type(4)
+    background: #00A77D
+    -webkit-animation-delay: 0.6s
+    animation-delay: 0.6s
+
+  &:nth-of-type(5)
+    background: #00B247
+    -webkit-animation-delay: 0.8s
+    animation-delay: 0.8s
+
+  &:nth-of-type(6)
+    background: #5AB027
+    -webkit-animation-delay: 1.0s
+    animation-delay: 1.0s
+
+  &:nth-of-type(7)
+    background: #A0B61E
+    -webkit-animation-delay: 1.2s
+    animation-delay: 1.2s
+
+/*
+ * Animation keyframes
+ */
+
+@-webkit-keyframes loading
+  0%
+    opacity: 0
+
+  100%
+    opacity: 1
+
+@keyframes loading
+  0%
+    opacity: 0
+
+  100%
+    opacity: 1
