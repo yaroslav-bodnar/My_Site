@@ -51,6 +51,19 @@ a {
   a:hover, a:focus {
     color: inherit; }
 
+.visually-hidden {
+  position: absolute;
+  width: 1px;
+  height: 1px;
+  margin: -1px;
+  border: 0;
+  padding: 0;
+  clip: rect(0 0 0 0);
+  overflow: hidden; }
+
+.hidden {
+  display: none; }
+
 /*********** Margin & Padding **********/
 .mt-0 {
   margin-top: 0 !important; }
@@ -781,3 +794,324 @@ header .header-mobile {
     right: 0;
     bottom: 0;
     left: 0; }
+
+/*============ 5. About Section ============*/
+.about-section {
+  background-color: #2C2D2F; }
+  .about-section .about h3 {
+    font-size: 22px;
+    font-weight: 700; }
+  .about-section .about .signature {
+    width: 50%; }
+  .about-section .about .about-info ul li {
+    line-height: 1em;
+    margin-bottom: 15px; }
+    .about-section .about .about-info ul li span.title {
+      font-family: "Playfair Display", serif;
+      font-size: 16px;
+      font-weight: 700;
+      letter-spacing: .5px;
+      border-bottom: 2px solid #fff;
+      position: relative;
+      display: inline-block;
+      margin-right: 15px;
+      padding-bottom: 1px;
+      color: #fff; }
+      .about-section .about .about-info ul li span.title:after {
+        content: ':';
+        position: absolute;
+        right: -10px; }
+  .about-section .services .service-item {
+    text-align: center;
+    margin-bottom: 40px;
+    position: relative; }
+    .about-section .services .service-item .icon {
+      font-size: 50px;
+      margin-bottom: 10px;
+      line-height: 1em;
+      color: #fff; }
+    .about-section .services .service-item h4 {
+      font-size: 18px;
+      font-weight: 600; }
+    .about-section .services .service-item p {
+      font-size: 14.5px;
+      line-height: 22px;
+      margin-bottom: 0;
+      margin-top: 15px;
+      margin-bottom: 15px; }
+
+.client-logo {
+  text-align: center; }
+
+.clients .client-logo img {
+  width: 100px;
+  height: 100px;
+  margin: auto;
+  -webkit-transition: opacity .4s ease;
+  -o-transition: opacity .4s ease;
+  transition: opacity .4s ease;
+  -webkit-filter: grayscale(100%);
+  filter: grayscale(100%); }
+
+.client-logo p {
+  border-bottom: 2px solid transparent; }
+
+.client-logo a:hover .clients-logo-img {
+  -webkit-filter: none;
+  filter: none; }
+
+.client-logo a:hover .clients-logo-dsc {
+  border-bottom: 2px solid #00A3E1; }
+
+.testimonials .testimonial-item {
+  position: relative;
+  padding: 5px; }
+  .testimonials .testimonial-item .testimonial-content {
+    background-color: #17181B;
+    width: 100%;
+    border-radius: 50px 0 50px 0;
+    padding-top: 20px;
+    padding-bottom: 20px;
+    padding-left: 100px;
+    padding-right: 20px;
+    font-size: 14px;
+    position: relative;
+    -webkit-filter: drop-shadow(0px 5px 5px rgba(0, 0, 0, 0.2));
+    filter: drop-shadow(0px 5px 5px rgba(0, 0, 0, 0.2)); }
+    .testimonials .testimonial-item .testimonial-content p {
+      margin-bottom: 0; }
+    .testimonials .testimonial-item .testimonial-content:before {
+      content: "\f10d";
+      position: absolute;
+      left: 5%;
+      top: 50%;
+      -webkit-transform: translateY(-50%);
+      -ms-transform: translateY(-50%);
+      transform: translateY(-50%);
+      font-size: 50px;
+      font-family: "Font Awesome 5 Free";
+      font-weight: 900;
+      color: #e1e1e1; }
+    .testimonials .testimonial-item .testimonial-content:after {
+      position: absolute;
+      content: "";
+      left: 15px;
+      top: 100%;
+      -webkit-transform: translateX(100%);
+      -ms-transform: translateX(100%);
+      transform: translateX(100%);
+      width: 0;
+      height: 0;
+      border-left: 10px solid transparent;
+      border-right: 10px solid transparent;
+      border-top: 11px solid #17181B; }
+  .testimonials .testimonial-item .testimonial-meta {
+    margin-top: 20px;
+    margin-left: 15px; }
+    .testimonials .testimonial-item .testimonial-meta img {
+      width: 60px;
+      height: 60px;
+      float: left;
+      border-radius: 20px 0 20px 0;
+      margin-right: 10px; }
+    .testimonials .testimonial-item .testimonial-meta .meta-info h4 {
+      font-size: 18px;
+      font-weight: 400; }
+    .testimonials .testimonial-item .testimonial-meta .meta-info p {
+      font-size: 14px; }
+
+/*============ 6. Resume Section ============*/
+.resume-section {
+  background-color: #2C2D2F; }
+  .resume-section ul.education, .resume-section ul.experience {
+    margin: 20px 0 50px;
+    list-style: none;
+    position: relative;
+    padding: 0 0 0 50px;
+    width: 100%; }
+  .resume-section ul.education li, .resume-section ul.experience li {
+    position: relative;
+    margin-left: 10px;
+    padding: 20px;
+    -webkit-transition: all .5s ease-in-out;
+    -o-transition: all .5s ease-in-out;
+    transition: all .5s ease-in-out; }
+  .resume-section ul.education li:not(:first-child), .resume-section ul.experience li:not(:first-child) {
+    margin-top: 60px; }
+  .resume-section ul.education li span.line-left, .resume-section ul.experience li span.line-left {
+    width: 2px;
+    height: 100%;
+    background-color: #e1e1e1;
+    left: -10px;
+    top: 0;
+    position: absolute; }
+  .resume-section ul.education li span.line-left:before, .resume-section ul.education li span.line-left:after {
+    content: "";
+    width: 10px;
+    height: 10px;
+    border-radius: 50%;
+    border: 2px solid #e1e1e1;
+    position: absolute;
+    left: -4px;
+    top: -10px; }
+  .resume-section ul.experience li span.line-left:before, .resume-section ul.experience li span.line-left:after {
+    content: "";
+    width: 10px;
+    height: 10px;
+    border-radius: 50%;
+    border: 2px solid #e1e1e1;
+    position: absolute;
+    left: -4px;
+    top: -10px; }
+  .resume-section ul.education li span.line-left:after, .resume-section ul.experience li span.line-left:after {
+    top: 100%; }
+  .resume-section .education .content, .resume-section .experience .content {
+    margin-left: 10px; }
+  .resume-section .education .content h4, .resume-section .experience .content h4 {
+    font-size: 18px;
+    font-weight: 700;
+    letter-spacing: .5px;
+    line-height: 26px;
+    margin: 0;
+    text-transform: uppercase; }
+  .resume-section .education .content h5, .resume-section .experience .content h5 {
+    margin-top: 5px;
+    margin-bottom: 5px;
+    font-size: 12px;
+    font-family: "Roboto", sans-serif;
+    font-weight: 600;
+    text-transform: uppercase; }
+  .resume-section .education .content p.info, .resume-section .experience .content p.info {
+    font-size: 16px;
+    margin-bottom: 0px; }
+  .resume-section .education span.year, .resume-section .experience span.year {
+    height: 100%;
+    left: -10px;
+    top: 0;
+    position: absolute; }
+  .resume-section .education span.year span, .resume-section .experience span.year span {
+    font-size: 16px;
+    position: absolute;
+    -webkit-transform: translateX(-120%);
+    -ms-transform: translateX(-120%);
+    transform: translateX(-120%);
+    color: #fff; }
+  .resume-section .education span.year span.to, .resume-section .experience span.year span.to {
+    top: -18px; }
+  .resume-section .education span.year span.from, .resume-section .experience span.year span.from {
+    bottom: -18px; }
+  .resume-section .skills {
+    margin-bottom: 30px; }
+    .resume-section .skills .skill-item {
+      padding: 0 20px; }
+
+/*============ 7. Portfolio Section ============*/
+.portfolio-section {
+  background-color: #2C2D2F;
+  overflow: hidden; }
+  .portfolio-section .portfolio-filter {
+    margin-bottom: 30px; }
+    .portfolio-section .portfolio-filter ul {
+      display: inline-block;
+      margin: 0 auto;
+      border-radius: 27px;
+      border: 1px dashed rgba(255, 255, 255, 0.2);
+      line-height: 0; }
+      .portfolio-section .portfolio-filter ul li {
+        display: inline-block;
+        font-size: 16px;
+        cursor: pointer;
+        font-family: "Roboto", sans-serif;
+        position: relative;
+        color: #e1e1e1;
+        text-transform: uppercase;
+        padding: 20px 20px;
+        overflow: hidden;
+        -webkit-transition: all .3s ease;
+        -o-transition: all .3s ease;
+        transition: all .3s ease; }
+        .portfolio-section .portfolio-filter ul li.active {
+          background-color: #fff;
+          border-radius: 27px;
+          color: #2C2D2F; }
+  .portfolio-section .item {
+    padding-left: 1em;
+    padding-right: 1em; }
+    .portfolio-section .item figure {
+      position: relative;
+      overflow: hidden;
+      max-height: 300px;
+      border-radius: 10px; }
+      .portfolio-section .item figure:before {
+        content: '';
+        position: absolute;
+        top: 0;
+        left: 0;
+        height: 100%;
+        width: 100%;
+        background-color: #000;
+        opacity: 0;
+        -webkit-transition: all .4s ease-in-out;
+        -o-transition: all .4s ease-in-out;
+        transition: all .4s ease-in-out; }
+      .portfolio-section .item figure:hover:before {
+        opacity: .7; }
+      .portfolio-section .item figure:hover figcaption h4, .portfolio-section .item figure:hover figcaption p {
+        opacity: 1;
+        -webkit-transition: all .4s ease-in-out;
+        -o-transition: all .4s ease-in-out;
+        transition: all .4s ease-in-out;
+        -webkit-transform: translateY(0);
+        -ms-transform: translateY(0);
+        transform: translateY(0); }
+      .portfolio-section .item figure figcaption {
+        position: absolute;
+        left: 0;
+        top: 50%;
+        padding-left: 20px;
+        -webkit-transform: translateY(-50%);
+        -ms-transform: translateY(-50%);
+        transform: translateY(-50%);
+        color: #fff; }
+        .portfolio-section .item figure figcaption h4, .portfolio-section .item figure figcaption p {
+          opacity: 0;
+          color: #fff;
+          -webkit-transition: all .1s ease-in;
+          -o-transition: all .1s ease-in;
+          transition: all .1s ease-in; }
+        .portfolio-section .item figure figcaption h4 {
+          font-size: 20px;
+          font-weight: 700;
+          -webkit-transform: translateY(-50px);
+          -ms-transform: translateY(-50px);
+          transform: translateY(-50px); }
+        .portfolio-section .item figure figcaption p {
+          padding-top: 10px;
+          -webkit-transform: translateY(50px);
+          -ms-transform: translateY(50px);
+          transform: translateY(50px); }
+    .portfolio-section .item a figure:after {
+      position: absolute;
+      font-family: "Font Awesome 5 Free";
+      font-weight: 900;
+      bottom: 20px;
+      right: 25px;
+      color: #fff;
+      font-size: 26px;
+      opacity: 0;
+      -webkit-transform: translateX(50px);
+      -ms-transform: translateX(50px);
+      transform: translateX(50px);
+      -webkit-transition: all .1s ease-in;
+      -o-transition: all .1s ease-in;
+      transition: all .1s ease-in; }
+    .portfolio-section .item a figure:hover:after {
+      -webkit-transform: translateX(0);
+      -ms-transform: translateX(0);
+      transform: translateX(0);
+      opacity: 1;
+      -webkit-transition: all .4s ease-in-out;
+      -o-transition: all .4s ease-in-out;
+      transition: all .4s ease-in-out; }
+    .portfolio-section .item a.image-link figure:after {
+      content: "\f03e"; }

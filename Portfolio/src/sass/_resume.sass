@@ -1,0 +1,107 @@
+/*============ 6. Resume Section ============*/
+
+.resume-section
+  background-color: #2C2D2F
+
+  ul
+    &.education, &.experience
+      margin: 20px 0 50px
+      list-style: none
+      position: relative
+      padding: 0 0 0 50px
+      width: 100%
+
+    &.education li, &.experience li
+      position: relative
+      margin-left: 10px
+      padding: 20px
+      -webkit-transition: all .5s ease-in-out
+      -o-transition: all .5s ease-in-out
+      transition: all .5s ease-in-out
+
+    &.education li:not(:first-child), &.experience li:not(:first-child)
+      margin-top: 60px
+
+    &.education li span.line-left, &.experience li span.line-left
+      width: 2px
+      height: 100%
+      background-color: #e1e1e1
+      left: -10px
+      top: 0
+      position: absolute
+
+    &.education li span.line-left
+      &:before, &:after
+        content: ""
+        width: 10px
+        height: 10px
+        -webkit-border-radius: 50%
+        border-radius: 50%
+        border: 2px solid #e1e1e1
+        position: absolute
+        left: -4px
+        top: -10px
+
+    &.experience li span.line-left
+      &:before, &:after
+        content: ""
+        width: 10px
+        height: 10px
+        -webkit-border-radius: 50%
+        border-radius: 50%
+        border: 2px solid #e1e1e1
+        position: absolute
+        left: -4px
+        top: -10px
+
+    &.education li span.line-left:after, &.experience li span.line-left:after
+      top: 100%
+
+  .education .content, .experience .content
+    margin-left: 10px
+
+  .education .content h4, .experience .content h4
+    font-size: 18px
+    font-weight: 700
+    letter-spacing: .5px
+    line-height: 26px
+    margin: 0
+    text-transform: uppercase
+
+  .education .content h5, .experience .content h5
+    margin-top: 5px
+    margin-bottom: 5px
+    font-size: 12px
+    font-family: "Roboto", sans-serif
+    font-weight: 600
+    text-transform: uppercase
+
+  .education .content p.info, .experience .content p.info
+    font-size: 16px
+    margin-bottom: 0px
+
+  .education span.year, .experience span.year
+    height: 100%
+    left: -10px
+    top: 0
+    position: absolute
+
+  .education span.year span, .experience span.year span
+    font-size: 16px
+    position: absolute
+    -webkit-transform: translateX(-120%)
+    -ms-transform: translateX(-120%)
+    transform: translateX(-120%)
+    color: #fff
+
+  .education span.year span.to, .experience span.year span.to
+    top: -18px
+
+  .education span.year span.from, .experience span.year span.from
+    bottom: -18px
+
+  .skills
+    margin-bottom: 30px
+
+    .skill-item
+      padding: 0 20px

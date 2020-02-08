@@ -1,0 +1,148 @@
+/*============ 5. About Section ============*/
+
+.about-section
+  background-color: #2C2D2F
+
+  .about
+    h3
+      font-size: 22px
+      font-weight: 700
+
+    .signature
+      width: 50%
+
+    .about-info ul li
+      line-height: 1em
+      margin-bottom: 15px
+
+      span.title
+        font-family: "Playfair Display", serif
+        font-size: 16px
+        font-weight: 700
+        letter-spacing: .5px
+        border-bottom: 2px solid #fff
+        position: relative
+        display: inline-block
+        margin-right: 15px
+        padding-bottom: 1px
+        color: #fff
+
+        &:after
+          content: ':'
+          position: absolute
+          right: -10px
+
+  .services .service-item
+    text-align: center
+    margin-bottom: 40px
+    position: relative
+
+    .icon
+      font-size: 50px
+      margin-bottom: 10px
+      line-height: 1em
+      color: #fff
+
+    h4
+      font-size: 18px
+      font-weight: 600
+
+    p
+      font-size: 14.5px
+      line-height: 22px
+      margin-bottom: 0
+      margin-top: 15px
+      margin-bottom: 15px
+
+
+.client-logo
+  text-align: center
+
+
+.clients .client-logo img
+  width: 100px
+  height: 100px
+  margin: auto
+  -webkit-transition: opacity .4s ease
+  -o-transition: opacity .4s ease
+  transition: opacity .4s ease
+  -webkit-filter: grayscale(100%)
+  filter: grayscale(100%)
+
+.client-logo p
+  border-bottom: 2px solid transparent
+
+.client-logo a:hover .clients-logo-img
+  -webkit-filter: none
+  filter: none
+
+.client-logo a:hover .clients-logo-dsc
+  border-bottom: 2px solid #00A3E1
+
+.testimonials .testimonial-item
+  position: relative
+  padding: 5px
+
+  .testimonial-content
+    background-color: #17181B
+    width: 100%
+    -webkit-border-radius: 50px 0 50px 0
+    border-radius: 50px 0 50px 0
+    padding-top: 20px
+    padding-bottom: 20px
+    padding-left: 100px
+    padding-right: 20px
+    font-size: 14px
+    position: relative
+    -webkit-filter: drop-shadow(0px 5px 5px rgba(0, 0, 0, 0.2))
+    filter: drop-shadow(0px 5px 5px rgba(0, 0, 0, 0.2))
+
+    p
+      margin-bottom: 0
+
+    &:before
+      content: "\f10d"
+      position: absolute
+      left: 5%
+      top: 50%
+      -webkit-transform: translateY(-50%)
+      -ms-transform: translateY(-50%)
+      transform: translateY(-50%)
+      font-size: 50px
+      font-family: "Font Awesome 5 Free"
+      font-weight: 900
+      color: #e1e1e1
+
+    &:after
+      position: absolute
+      content: ""
+      left: 15px
+      top: 100%
+      -webkit-transform: translateX(100%)
+      -ms-transform: translateX(100%)
+      transform: translateX(100%)
+      width: 0
+      height: 0
+      border-left: 10px solid transparent
+      border-right: 10px solid transparent
+      border-top: 11px solid #17181B
+
+  .testimonial-meta
+    margin-top: 20px
+    margin-left: 15px
+
+    img
+      width: 60px
+      height: 60px
+      float: left
+      -webkit-border-radius: 20px 0 20px 0
+      border-radius: 20px 0 20px 0
+      margin-right: 10px
+
+    .meta-info
+      h4
+        font-size: 18px
+        font-weight: 400
+
+      p
+        font-size: 14px

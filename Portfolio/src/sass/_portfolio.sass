@@ -1,0 +1,136 @@
+/*============ 7. Portfolio Section ============*/
+
+.portfolio-section
+  background-color: #2C2D2F
+  overflow: hidden
+
+  .portfolio-filter
+    margin-bottom: 30px
+
+    ul
+      display: inline-block
+      margin: 0 auto
+      -webkit-border-radius: 27px
+      border-radius: 27px
+      border: 1px dashed rgba(255, 255, 255, 0.2)
+      line-height: 0
+
+      li
+        display: inline-block
+        font-size: 16px
+        cursor: pointer
+        font-family: "Roboto", sans-serif
+        position: relative
+        color: #e1e1e1
+        text-transform: uppercase
+        padding: 20px 20px
+        overflow: hidden
+        -webkit-transition: all .3s ease
+        -o-transition: all .3s ease
+        transition: all .3s ease
+
+        &.active
+          background-color: #fff
+          -webkit-border-radius: 27px
+          border-radius: 27px
+          color: #2C2D2F
+
+
+  .item
+    padding-left: 1em
+    padding-right: 1em
+
+    figure
+      position: relative
+      overflow: hidden
+      max-height: 300px
+      -webkit-border-radius: 10px
+      border-radius: 10px
+
+      &:before
+        content: ''
+        position: absolute
+        top: 0
+        left: 0
+        height: 100%
+        width: 100%
+        background-color: #000
+        opacity: 0
+        -webkit-transition: all .4s ease-in-out
+        -o-transition: all .4s ease-in-out
+        transition: all .4s ease-in-out
+
+      &:hover
+        &:before
+          opacity: .7
+
+        figcaption
+          h4, p
+            opacity: 1
+            -webkit-transition: all .4s ease-in-out
+            -o-transition: all .4s ease-in-out
+            transition: all .4s ease-in-out
+            -webkit-transform: translateY(0)
+            -ms-transform: translateY(0)
+            transform: translateY(0)
+
+      figcaption
+        position: absolute
+        left: 0
+        top: 50%
+        padding-left: 20px
+        -webkit-transform: translateY(-50%)
+        -ms-transform: translateY(-50%)
+        transform: translateY(-50%)
+        color: #fff
+
+        h4, p
+          opacity: 0
+          color: #fff
+          -webkit-transition: all .1s ease-in
+          -o-transition: all .1s ease-in
+          transition: all .1s ease-in
+
+        h4
+          font-size: 20px
+          font-weight: 700
+          -webkit-transform: translateY(-50px)
+          -ms-transform: translateY(-50px)
+          transform: translateY(-50px)
+
+        p
+          padding-top: 10px
+          -webkit-transform: translateY(50px)
+          -ms-transform: translateY(50px)
+          transform: translateY(50px)
+
+    a
+      figure
+        &:after
+          position: absolute
+          font-family: "Font Awesome 5 Free"
+          font-weight: 900
+          bottom: 20px
+          right: 25px
+          color: #fff
+          font-size: 26px
+          opacity: 0
+          -webkit-transform: translateX(50px)
+          -ms-transform: translateX(50px)
+          transform: translateX(50px)
+          -webkit-transition: all .1s ease-in
+          -o-transition: all .1s ease-in
+          transition: all .1s ease-in
+
+        &:hover:after
+          -webkit-transform: translateX(0)
+          -ms-transform: translateX(0)
+          transform: translateX(0)
+          opacity: 1
+          -webkit-transition: all .4s ease-in-out
+          -o-transition: all .4s ease-in-out
+          transition: all .4s ease-in-out
+
+      &.image-link figure:after
+        content: "\f03e"
+
