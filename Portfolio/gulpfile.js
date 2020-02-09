@@ -35,6 +35,11 @@ gulp.task('code-html', function() {
     .pipe(browserSync.reload({ stream: true }));
 });
 
+gulp.task('code-blog-html', function() {
+    return gulp.src('./src/blog-pages/*.html')
+    .pipe(browserSync.reload({ stream: true }));
+});
+
 gulp.task('code-css', function() {
     return gulp.src('./src/css/*.css')
     .pipe(browserSync.reload({ stream: true }));
@@ -44,6 +49,7 @@ gulp.task('code-css', function() {
 gulp.task('watch', function() {
     gulp.watch('src/sass/**/*.sass', gulp.parallel('sass')); // Наблюдение за sass файлами
     gulp.watch('src/*.html', gulp.parallel('code-html')); // Наблюдение за HTML файлами в корне проекта
+    gulp.watch('src/blog-pages/*.html', gulp.parallel('code-blog-html')); // Наблюдение за HTML файлами 
     gulp.watch('src/css/*.css', gulp.parallel('code-css')); // Наблюдение за css файлами в корне проекта
 });
 gulp.task('default', gulp.parallel('sass','browser-sync', 'watch'));

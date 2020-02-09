@@ -1,0 +1,73 @@
+/*============ 12. Mobile Responsive Css ============*/
+@media screen and (max-width: 991px)
+  .about-section .about-info
+    margin-top: 40px
+
+    ul li
+      display: inline-block
+      position: relative
+      margin: 0 5px
+      padding: 0 5px
+
+  .blog-page .blog-heading
+    margin-top: 0
+
+@media screen and (max-width: 767px)
+  header
+    .header-main
+      left: -200px
+      -webkit-transition: all .3s ease-in-out
+      -o-transition: all .3s ease-in-out
+      transition: all .3s ease-in-out
+
+      h2
+        display: none !important
+
+    .header-mobile
+      display: block
+      -webkit-transition: all .3s ease-in-out
+      -o-transition: all .3s ease-in-out
+      transition: all .3s ease-in-out
+
+    .header-content.on .header-main
+      left: 0px
+
+  #main
+    left: 0px
+    -webkit-transition: all .3s ease-in-out
+    -o-transition: all .3s ease-in-out
+    transition: all .3s ease-in-out
+
+    .pt-page, .blog-page
+      padding-top: 50px
+
+  .banner-section .banner-content
+    h1
+      font-size: 50px
+
+    p.cd-headline
+      font-size: 22px
+
+@media screen and (min-height: 610px)
+  .header-main .nav-footer
+    position: absolute
+    bottom: 0
+    left: 0
+
+@media screen and (max-width: 575px)
+  .about-section .about .signature
+    width: 70%
+
+  .resume-section
+    ul
+      &.education, &.experience
+        padding: 0
+
+      &.education span.year, &.experience span.year
+        left: 42px
+
+    .skills .skill-item
+      padding: 0
+
+  .portfolio-section .portfolio-filter ul
+    border: none

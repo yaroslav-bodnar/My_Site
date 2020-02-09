@@ -31,8 +31,19 @@ $(window).on('load', function() {
         });
     }
 
+
     /*======== Blogs Masonry Setup ========*/
     $('.blogs-masonry').isotope({ layoutMode: 'moduloColumns' });
+
+
+    /*======== Random Animation Setup ========*/
+    $('html').data('random-animation', true);
+
+
+    /*======== Particles ========*/
+    particlesJS.load('particles-js', 'js/particles2.json', function() {
+        console.log('particles.js loaded');
+    });
 
 });
 
@@ -149,31 +160,6 @@ $(document).ready(function() {
 
 
 
-
-    /*======== Portfolio Image Link Setup ========*/
-    // $('.portfolio-items .image-link').magnificPopup({
-    //     type: 'image',
-    //     zoom: {
-    //         enabled: true,
-    //         duration: 300,
-    //         easing: 'ease-in-out',
-    //         opener: function(openerElement) {
-    //             return openerElement.is('img') ? openerElement : openerElement.find('img');
-    //         }
-    //     },
-    //     gallery: {
-    //         enabled: true
-    //     }
-    // });
-
-    /*======== Portfolio Video Link Setup ========*/
-    // $('.portfolio-items .video-link').magnificPopup({
-    //     type: 'iframe',
-    //     gallery: {
-    //         enabled: true
-    //     }
-    // });
-
     /*======== Portfolio Ajax Link Setup ========*/
     ajaxPortfolioSetup($('.portfolio-items .ajax-link'), $('.ajax-portfolio-popup'));
 
@@ -185,10 +171,6 @@ $(document).ready(function() {
         reverse: true
     });
 
-    /*======== Google Map Setup ========*/
-    if($('#map').length) {
-        initMap();
-     }
 
 
     /*======== Contact Form Setup ========*/
@@ -237,31 +219,6 @@ function ajaxPortfolioSetup($ajaxLink, $ajaxContainer) {
 
 }
 
-
-/********** Function Map Initialization **********/
-function initMap() {
-    var latitude = $("#map").data('latitude'),
-        longitude = $("#map").data('longitude'),
-        zoom = $("#map").data('zoom'),
-        cordinates = new google.maps.LatLng(latitude, longitude);
-
-    var styles = [{"stylers":[{"saturation":-100},{"gamma":0.8},{"lightness":4},{"visibility":"on"}]},{"featureType":"landscape.natural","stylers":[{"visibility":"on"},{"color":"#5dff00"},{"gamma":4.97},{"lightness":-5},{"saturation":100}]}];
-        var mapOptions = {
-        zoom: zoom,
-        center: cordinates,
-        mapTypeControl: false,
-        disableDefaultUI: true,
-        zoomControl: true,
-        scrollwheel: false,
-        styles: styles
-    };
-    var map = new google.maps.Map(document.getElementById('map'), mapOptions);
-    var marker = new google.maps.Marker({
-        position: cordinates,
-        map: map,
-        title: "We are here!"
-    });
-}
 
 /********** Function Contact Form Setup **********/
 function contactFormSetup() {

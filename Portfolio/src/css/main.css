@@ -1,6 +1,4 @@
 /*============ 1. Body and Core Css ============*/
-@import url("https://fonts.googleapis.com/css?family=Roboto:400,500,700,900");
-@import url("https://fonts.googleapis.com/css?family=Playfair+Display:400,700,900");
 * {
   -webkit-box-sizing: border-box;
   box-sizing: border-box;
@@ -1041,7 +1039,9 @@ header .header-mobile {
       position: relative;
       overflow: hidden;
       max-height: 300px;
-      border-radius: 10px; }
+      border-radius: 10px;
+      -webkit-box-shadow: 0 0 20px rgba(0, 0, 0, 0.5);
+              box-shadow: 0 0 20px rgba(0, 0, 0, 0.5); }
       .portfolio-section .item figure:before {
         content: '';
         position: absolute;
@@ -1115,3 +1115,212 @@ header .header-mobile {
       transition: all .4s ease-in-out; }
     .portfolio-section .item a.image-link figure:after {
       content: "\f03e"; }
+
+/*============ 8. Blog Section ============*/
+.blog-section {
+  background-color: #2C2D2F; }
+  .blog-section .blog-item {
+    position: relative;
+    display: block;
+    background-color: #2C2D2F;
+    border: 1px solid #222324;
+    margin-bottom: 50px;
+    overflow: hidden;
+    -webkit-box-shadow: 0 0 20px rgba(0, 0, 0, 0.5);
+            box-shadow: 0 0 20px rgba(0, 0, 0, 0.5); }
+    .blog-section .blog-item .blog-image img {
+      -webkit-transition: all 1s ease;
+      -o-transition: all 1s ease;
+      transition: all 1s ease; }
+    .blog-section .blog-item:hover img {
+      -webkit-transform: scale(1.1);
+      -ms-transform: scale(1.1);
+      transform: scale(1.1); }
+    .blog-section .blog-item .blog-content {
+      padding: 28px 16px 36px;
+      text-align: center;
+      width: 82%;
+      position: relative;
+      background-color: #2C2D2F;
+      margin-left: auto;
+      margin-right: auto;
+      margin-top: -40px; }
+      .blog-section .blog-item .blog-content .cat {
+        margin-bottom: 7px;
+        text-transform: uppercase;
+        font-size: 12px;
+        font-weight: 700;
+        letter-spacing: 1.5px; }
+      .blog-section .blog-item .blog-content .blog-title {
+        margin-bottom: 6px;
+        font-size: 21px;
+        letter-spacing: .5px;
+        text-transform: capitalize; }
+      .blog-section .blog-item .blog-content .blog-date {
+        font-family: serif;
+        font-style: italic;
+        color: #e1e1e1;
+        font-size: 14px; }
+
+/*============ 11. Blog Page Css ============*/
+.blog-page {
+  width: 100%;
+  height: 100%;
+  position: absolute;
+  top: 0;
+  left: 0;
+  overflow: auto;
+  z-index: 1;
+  background-color: #2C2D2F;
+  padding-bottom: 50px; }
+  .blog-page .blog-container {
+    max-width: 1040px;
+    width: 90%;
+    margin: 0 auto; }
+  .blog-page .blog-image {
+    text-align: center;
+    width: 100%;
+    height: 50%;
+    overflow: hidden;
+    margin: auto; }
+  .blog-page .blog-heading {
+    background-color: #2C2D2F;
+    margin-top: -100px;
+    padding-top: 40px;
+    padding-bottom: 40px;
+    text-align: center;
+    letter-spacing: .5px; }
+    .blog-page .blog-heading h1 {
+      font-size: 40px;
+      margin-bottom: 6px;
+      letter-spacing: .5px; }
+    .blog-page .blog-heading .cat {
+      margin-bottom: 7px;
+      text-transform: uppercase;
+      font-size: 12px;
+      font-weight: 700;
+      letter-spacing: 1.5px; }
+    .blog-page .blog-heading .blog-date {
+      font-family: serif;
+      font-style: italic;
+      color: #777;
+      font-size: 14px; }
+  .blog-page .blog-content {
+    padding-bottom: 50px; }
+  .blog-page .blog-comments .comment-list .comment {
+    padding-bottom: 20px;
+    margin-bottom: 20px;
+    border-bottom: 1px dotted #e3e3e3; }
+    .blog-page .blog-comments .comment-list .comment .author-img {
+      float: left;
+      margin-right: 20px; }
+      .blog-page .blog-comments .comment-list .comment .author-img img {
+        border-radius: 100%;
+        max-width: 70px; }
+    .blog-page .blog-comments .comment-list .comment .comment-text {
+      overflow: hidden; }
+      .blog-page .blog-comments .comment-list .comment .comment-text .reply {
+        float: right; }
+        .blog-page .blog-comments .comment-list .comment .comment-text .reply a {
+          font-size: 10px;
+          background-color: #fff;
+          color: #222;
+          padding: 3px 8px 4px 8px;
+          border-radius: 10px;
+          margin-left: 7px; }
+      .blog-page .blog-comments .comment-list .comment .comment-text h6.author {
+        font-size: 16px;
+        font-weight: 700;
+        text-transform: uppercase;
+        letter-spacing: 1px;
+        margin-bottom: 7px; }
+      .blog-page .blog-comments .comment-list .comment .comment-text span.date {
+        display: block;
+        color: #999;
+        font-size: 12px;
+        line-height: 1em;
+        margin-bottom: 5px; }
+      .blog-page .blog-comments .comment-list .comment .comment-text p {
+        color: #fff;
+        font-size: 15px; }
+
+/*============ 9. Contact Section ============*/
+.contact-section {
+  background-color: #2C2D2F; }
+  .contact-section #map {
+    width: 100%;
+    height: 200px; }
+  .contact-section .contact-info {
+    text-align: center; }
+    .contact-section .contact-info .info-item .icon {
+      position: relative;
+      display: inline-block;
+      text-align: center;
+      font-size: 30px;
+      line-height: 1em;
+      margin-top: 15px;
+      margin-bottom: 15px; }
+    .contact-section .contact-info .info-item h5 {
+      font-size: 18px; }
+
+#contact-form .alert-container {
+  text-align: center; }
+  #contact-form .alert-container .alert {
+    border-radius: 0; }
+
+/*============ 12. Mobile Responsive Css ============*/
+@media screen and (max-width: 991px) {
+  .about-section .about-info {
+    margin-top: 40px; }
+    .about-section .about-info ul li {
+      display: inline-block;
+      position: relative;
+      margin: 0 5px;
+      padding: 0 5px; }
+  .blog-page .blog-heading {
+    margin-top: 0; } }
+
+@media screen and (max-width: 767px) {
+  header .header-main {
+    left: -200px;
+    -webkit-transition: all .3s ease-in-out;
+    -o-transition: all .3s ease-in-out;
+    transition: all .3s ease-in-out; }
+    header .header-main h2 {
+      display: none !important; }
+  header .header-mobile {
+    display: block;
+    -webkit-transition: all .3s ease-in-out;
+    -o-transition: all .3s ease-in-out;
+    transition: all .3s ease-in-out; }
+  header .header-content.on .header-main {
+    left: 0px; }
+  #main {
+    left: 0px;
+    -webkit-transition: all .3s ease-in-out;
+    -o-transition: all .3s ease-in-out;
+    transition: all .3s ease-in-out; }
+    #main .pt-page, #main .blog-page {
+      padding-top: 50px; }
+  .banner-section .banner-content h1 {
+    font-size: 50px; }
+  .banner-section .banner-content p.cd-headline {
+    font-size: 22px; } }
+
+@media screen and (min-height: 610px) {
+  .header-main .nav-footer {
+    position: absolute;
+    bottom: 0;
+    left: 0; } }
+
+@media screen and (max-width: 575px) {
+  .about-section .about .signature {
+    width: 70%; }
+  .resume-section ul.education, .resume-section ul.experience {
+    padding: 0; }
+  .resume-section ul.education span.year, .resume-section ul.experience span.year {
+    left: 42px; }
+  .resume-section .skills .skill-item {
+    padding: 0; }
+  .portfolio-section .portfolio-filter ul {
+    border: none; } }
