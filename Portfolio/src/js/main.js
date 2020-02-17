@@ -245,6 +245,7 @@ function contactFormSetup() {
     $('#contact-form').on('submit', function(e) {
         e.preventDefault();
         var name = $('#cf-name').val(),
+            phone = $('#cf-phone').val(),
             email = $('#cf-email').val(),
             message = $('#cf-message').val(),
             $messageBox = $('#contact-form .message'),
@@ -267,9 +268,10 @@ function contactFormSetup() {
         if( required === 0 ) {
             $.ajax({
                 type: 'POST',
-                url: 'mail.php',
+                url: 'telegram.php',
                 data: {
                     cf_name: name,
+                    cf_phone: phone,
                     cf_email: email,
                     cf_message: message
                 },
@@ -300,3 +302,9 @@ function showAlertBox(response, message) {
     $alContainer.fadeIn(300).delay(2000).fadeOut(400);
 }
 
+
+
+ $('#cf-submit').on('click', function() {
+            $('#cf-submit').removeClass('btn-main');
+            $('#cf-submit').addClass('message-send');
+    });
