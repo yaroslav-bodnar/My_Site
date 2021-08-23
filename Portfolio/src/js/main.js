@@ -268,7 +268,7 @@ function contactFormSetup() {
         if( required === 0 ) {
             $.ajax({
                 type: 'POST',
-                url: 'telegram.php',
+                url: 'mail.php',
                 data: {
                     cf_name: name,
                     cf_phone: phone,
